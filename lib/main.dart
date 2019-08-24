@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'Pacifico',
                   fontSize: 40.0,
                   color: Colors.white,
+                  //  color: Colors.amber.shade200,
                   fontWeight: FontWeight.bold
                 )
               ),
@@ -31,10 +32,36 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'SourceSansPro',
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.teal.shade100,
+                      //color: Colors.teal.shade100,
+                      color: Colors.amber.shade200,
                       letterSpacing: 2.5
                   )
-              )
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('+1-541-754-3010',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSacsPro',
+                      fontSize: 20.0,
+                    )),
+                  ],
+                ),
+              ),
             ],
         ),
           ),
