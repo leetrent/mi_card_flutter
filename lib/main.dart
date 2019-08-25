@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
+          minimum: EdgeInsets.only(top: 45.0),
           child: Column (
             children: <Widget>[
               CircleAvatar(
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
                   )
               ),
               Card(
-                color: Colors.white,
+                //color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
@@ -54,32 +55,29 @@ class MyApp extends StatelessWidget {
                       color: Colors.teal.shade900,
                       fontFamily: 'SourceSansPro',
                       fontSize: 20.0,
-                      ),
+                    ),
                   ),
                 ),
               ),
               Card(
-                color: Colors.white,
+                //color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'lee@leetrent.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('lee@leetrent.com',
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0,
-                        )),
-                  ],
+                  ),
                 ),
               ),
             ],
